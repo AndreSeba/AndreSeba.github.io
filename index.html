@@ -408,15 +408,15 @@
         <span class="eyebrow boot-line">Sys.Profile — Build 2026.09</span>
         <h1 class="chrome-text">ANDRES SEBASTIAN PEINADO ARDAYA<span class="surname">Ingeniería de Sistemas</span></h1>
 
-        <p class="role-line">Desarrollador .NET &amp; ASP.NET Core — APIs REST, arquitectura en capas y frontends en Blazor / React.</p>
+        <p class="role-line">Analista de TI — desarrollo de sistemas, datos y soporte técnico, con IA aplicada al trabajo diario.</p>
 
-        <p class="prose">Estudiante de noveno semestre de Ingeniería de Sistemas en Bolivia. Construyo sistemas de punta a punta: dominio, persistencia y la interfaz que los consume. También me interesan los roles híbridos que combinan desarrollo con soporte técnico e infraestructura.</p>
+        <p class="prose">Estudiante de Ingeniería de Sistemas en Bolivia, a una materia de egresar. Desarrollo y mantengo sistemas internos (C#/.NET, Python, SQL Server), trabajo con datos y reportes, y uso herramientas de IA generativa para desarrollar y probar más rápido. Me interesan los roles que combinan desarrollo, datos y soporte técnico.</p>
 
         <div class="statgrid">
-          <div class="stat"><div class="k">Rol</div><div class="v">Desarrollador .NET / Full-stack</div></div>
-          <div class="stat"><div class="k">Formación</div><div class="v">9.º semestre — Ing. de Sistemas</div></div>
-          <div class="stat"><div class="k">Ubicación</div><div class="v">Bolivia</div></div>
-          <div class="stat"><div class="k">Disponibilidad</div><div class="v status"><span class="dot"></span>Prácticas y proyectos</div></div>
+          <div class="stat"><div class="k">Rol</div><div class="v">Analista de TI / Desarrollo</div></div>
+          <div class="stat"><div class="k">Formación</div><div class="v">Ing. de Sistemas — egreso pendiente de 1 materia</div></div>
+          <div class="stat"><div class="k">Ubicación</div><div class="v">Santa Cruz, Bolivia</div></div>
+          <div class="stat"><div class="k">Disponibilidad</div><div class="v status"><span class="dot"></span>Abierto a nuevas oportunidades</div></div>
         </div>
 
         <div class="cta-row">
@@ -449,9 +449,9 @@
     <div class="panel">
       <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
       <div class="module">
-        <span class="eyebrow">Module 01 — Plataforma de inventario</span>
-        <h3 class="module-title">InventoryPlatform</h3>
-        <p class="prose">Sistema de control de inventario con catálogo de productos, movimientos de stock por ubicación, un flujo de solicitud → aprobación → entrega por área, y sesiones de conteo físico reconciliables contra el sistema. El backend y el frontend viven en repos separados, comunicados por una API REST.</p>
+        <span class="eyebrow">Module 01 — Sistema interno</span>
+        <h3 class="module-title">Plataforma de inventario</h3>
+        <p class="prose">Sistema de control de inventario para reemplazar una hoja de Excel con macros: catálogo de productos, movimientos de stock por ubicación, flujo de solicitud → aprobación → entrega, conteo físico, roles y permisos, auditoría y notificaciones. Desarrollo concluido, pendiente de despliegue. Construido con asistencia de IA (Claude) en diseño, implementación y pruebas. Código privado.</p>
 
         <div class="split">
           <div>
@@ -470,14 +470,10 @@
               <span class="tech-chip"><svg class="ticon"><use href="#ic-window"/></svg>Blazor Server (.NET 10)</span>
               <span class="tech-chip"><svg class="ticon"><use href="#ic-code"/></svg>HttpClient tipado</span>
             </div>
-            <p style="margin-top:.9rem;">Sin acceso directo a datos: todo pasa por la API. Comparte los DTOs del backend por referencia de proyecto. Pantallas para productos, movimientos, solicitudes y conteos.</p>
+            <p style="margin-top:.9rem;">Sin acceso directo a datos: todo pasa por la API. Comparte los DTOs del backend por referencia de proyecto. Autenticación JWT con permisos por rol.</p>
           </div>
         </div>
 
-        <div class="linkrow">
-          <a href="https://github.com/AndreSeba/InventoryPlatform" target="_blank" rel="noopener">Repo backend →</a>
-          <a href="https://github.com/AndreSeba/InventoryPlatform.Web" target="_blank" rel="noopener">Repo frontend →</a>
-        </div>
       </div>
     </div>
 
@@ -558,6 +554,22 @@
 
         <div class="mini-item">
           <div>
+            <h5>Conteo físico de inventario</h5>
+            <p>Aplicación de escritorio para conteos de inventario: importación desde Excel con mapeo de columnas, indicadores de exactitud (IRA) y exportación de resultados. Empaquetada como .exe. Código privado.</p>
+          </div>
+          <span class="tech-chip"><svg class="ticon"><use href="#ic-terminal"/></svg>Python · Tkinter · SQLite · pytest</span>
+        </div>
+
+        <div class="mini-item">
+          <div>
+            <h5>Mejora de sistema en Excel/VBA</h5>
+            <p>Corrección de errores de un sistema de inventario con macros, validación de stock, préstamos y devoluciones, dashboard y scripts de migración de datos.</p>
+          </div>
+          <span class="tech-chip"><svg class="ticon"><use href="#ic-code"/></svg>VBA · Excel · Python</span>
+        </div>
+
+        <div class="mini-item">
+          <div>
             <h5>Sistema POS (stack PERN)</h5>
             <p>Sistema de punto de venta con gestión de productos, ventas y usuarios.</p>
           </div>
@@ -579,7 +591,7 @@
         <span class="eyebrow">Spec.01</span>
         <h3>Backend</h3>
         <div class="spec-rows">
-          <div class="spec-row"><div class="term">Lenguaje</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-code"/></svg>C#</span></div></div>
+          <div class="spec-row"><div class="term">Lenguaje</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-code"/></svg>C#</span><span class="tech-chip"><svg class="ticon"><use href="#ic-code"/></svg>Python</span></div></div>
           <div class="spec-row"><div class="term">Runtime</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-hex"/></svg>.NET 10</span></div></div>
           <div class="spec-row"><div class="term">Web API</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-globe"/></svg>ASP.NET Core — MVC con Controllers</span></div></div>
           <div class="spec-row"><div class="term">Datos</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-db"/></svg>Entity Framework Core</span></div></div>
@@ -612,9 +624,11 @@
       <div class="panel spec-box">
         <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
         <span class="eyebrow">Spec.04</span>
-        <h3>Perfil híbrido</h3>
+        <h3>Soporte, datos e IA</h3>
         <div class="spec-rows">
-          <div class="spec-row"><div class="term">Soporte</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-terminal"/></svg>Soporte técnico e IT</span></div></div>
+          <div class="spec-row"><div class="term">Soporte</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-terminal"/></svg>Soporte a usuarios y configuración de equipos</span></div></div>
+          <div class="spec-row"><div class="term">IA</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-terminal"/></svg>IA generativa (Claude, ChatGPT) en desarrollo; Power Automate</span></div></div>
+          <div class="spec-row"><div class="term">Datos</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-db"/></svg>Reportes en Power BI y Excel</span></div></div>
           <div class="spec-row"><div class="term">Arquitectura</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-layers"/></svg>Diseño en capas, separación de responsabilidades</span></div></div>
           <div class="spec-row"><div class="term">Prácticas</div><div class="val tech-list"><span class="tech-chip"><svg class="ticon"><use href="#ic-check"/></svg>Repos limpios, documentación real</span></div></div>
         </div>
@@ -668,6 +682,21 @@
         </div>
         <div class="skill-row">
           <span class="skill-name">Soporte técnico / IT</span>
+          <span class="skill-meter"><span class="skill-seg filled"></span><span class="skill-seg"></span><span class="skill-seg"></span><span class="skill-seg"></span></span>
+          <span class="skill-level">Base</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Python</span>
+          <span class="skill-meter"><span class="skill-seg filled"></span><span class="skill-seg"></span><span class="skill-seg"></span><span class="skill-seg"></span></span>
+          <span class="skill-level">Base</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">IA generativa aplicada al desarrollo</span>
+          <span class="skill-meter"><span class="skill-seg filled"></span><span class="skill-seg filled"></span><span class="skill-seg"></span><span class="skill-seg"></span></span>
+          <span class="skill-level">Intermedio</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Excel avanzado / VBA</span>
           <span class="skill-meter"><span class="skill-seg filled"></span><span class="skill-seg filled"></span><span class="skill-seg"></span><span class="skill-seg"></span></span>
           <span class="skill-level">Intermedio</span>
         </div>
@@ -725,7 +754,7 @@
 
     <div class="panel uplink-panel">
       <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-      <p class="prose" style="margin-top:0;">Abierto a prácticas profesionales, proyectos freelance y posiciones junior de desarrollo .NET o soporte técnico.</p>
+      <p class="prose" style="margin-top:0;">Abierto a posiciones junior en TI: desarrollo, datos y soporte técnico, y a proyectos de automatización con IA.</p>
       <div class="cta-row" style="margin-top:1.4rem;">
         <a class="btn" href="mailto:andrespeinadoardaya780@gmail.com">Mail →</a>
         <a class="btn ghost" href="https://github.com/AndreSeba" target="_blank" rel="noopener">GitHub →</a>
