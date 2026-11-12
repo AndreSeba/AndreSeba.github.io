@@ -203,6 +203,12 @@
   @media (max-width:820px){ .letter{ grid-template-columns:minmax(0,1fr); } }
   .mail{ display:flex; flex-wrap:wrap; align-items:center; gap:.8rem; margin-top:1.4rem; }
   .mail code{ font:500 1rem var(--f-mono); padding:.7rem 1rem; border:1px dashed var(--ink-2); user-select:all; overflow-wrap:anywhere; }
+  .ficha-end{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.4rem; margin-top:1.6rem; }
+  .ficha-end .stamp{ margin-top:0; }
+  .flags{ display:flex; gap:1.2rem; }
+  .flags figure{ margin:0; display:grid; gap:.45rem; }
+  .flags svg{ width:84px; height:56px; display:block; border:1px solid var(--line); box-shadow:0 2px 6px rgba(0,0,0,.12); }
+  .flags figcaption{ font:500 .72rem var(--f-body); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2); }
   .stamp{ width:104px; height:104px; border:2px solid var(--sun); color:var(--sun-ink); display:grid; place-items:center; font-family:var(--f-display); font-weight:800; font-size:1.3rem; line-height:1.15; text-align:center; transform:rotate(-7deg); margin-top:1.6rem; }
 
   footer{ border-top:1px solid var(--line); margin-top:3rem; padding-block:1.4rem; display:flex; flex-wrap:wrap; justify-content:space-between; gap:.6rem 2rem; }
@@ -383,7 +389,19 @@
           <span class="mono">Ficha</span>
           <p class="lamp" style="margin-bottom:.6rem"><i></i><b>Disponible</b></p>
           <p class="dim">Santa Cruz, Bolivia<br>Ingeniería de Sistemas, egresado</p>
-          <div class="stamp" aria-hidden="true">ペイ<br>ナド</div>
+          <div class="ficha-end">
+            <div class="flags">
+              <figure>
+                <svg viewBox="0 0 3 2" role="img" aria-label="Bandera de Santa Cruz"><rect width="3" height="2" fill="#FFFFFF"/><rect width="3" height=".667" fill="#00843D"/><rect y="1.333" width="3" height=".667" fill="#00843D"/></svg>
+                <figcaption>Santa Cruz</figcaption>
+              </figure>
+              <figure>
+                <svg viewBox="0 0 3 2" role="img" aria-label="Bandera de Bolivia"><rect width="3" height=".667" fill="#D52B1E"/><rect y=".667" width="3" height=".667" fill="#F9E300"/><rect y="1.333" width="3" height=".667" fill="#007934"/></svg>
+                <figcaption>Bolivia</figcaption>
+              </figure>
+            </div>
+            <div class="stamp" aria-hidden="true">ペイ<br>ナド</div>
+          </div>
         </div>
       </div>
     </section>
@@ -483,7 +501,7 @@
   var EN = {
     "Portafolio · AS-2026":"Portfolio · AS-2026",
     "Inicio":"Home","Proyectos":"Projects","Stack y nivel":"Stack & skill level","Certificados":"Certificates","Contacto":"Contact","Hablemos":"Let's talk",
-    "AndreSeba, inicio":"AndreSeba, home","Secciones":"Sections","Cambiar entre tarde y noche":"Switch between day and night","Tarde / noche":"Day / night",
+    "AndreSeba, inicio":"AndreSeba, home","Secciones":"Sections","Cambiar entre tarde y noche":"Switch between day and night","Bandera de Santa Cruz":"Flag of Santa Cruz","Bandera de Bolivia":"Flag of Bolivia","Tarde / noche":"Day / night",
     "Ingeniero de Sistemas: desarrollo de software, datos y soporte técnico.":"Systems Engineer: software development, data and technical support.",
     "Egresado de Ingeniería de Sistemas en Bolivia. Construyo y mantengo sistemas de punta a punta (C#/.NET, Python, SQL Server), trabajo con datos y reportes, y me interesan los roles que combinan desarrollo con soporte técnico e infraestructura.":"Systems Engineering graduate from Bolivia. I build and maintain end-to-end systems (C#/.NET, Python, SQL Server), work with data and reports, and I'm interested in roles that combine development with technical support and infrastructure.",
     "Ver proyectos →":"View projects →","Contactar":"Get in touch",
